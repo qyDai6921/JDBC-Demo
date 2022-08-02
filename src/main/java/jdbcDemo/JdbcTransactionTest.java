@@ -47,7 +47,7 @@ public class JdbcTransactionTest {
             // update but rollback
             stmt.executeUpdate("update books set qty = qty + 1000 where title = 'Data'");
             stmt.executeUpdate("update books set qty = qty + 1000 where title = 'Math'");
-            conn.rollback();
+            conn.rollback(); // Undoes all changes made in the current transaction
 
             // after update (rollback)
             String sqlSelect3 = "select * from books where title in ('Data', 'Math')";

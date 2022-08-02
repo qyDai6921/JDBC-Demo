@@ -18,7 +18,7 @@ public class JdbcRollBackInCatchTest {
                 conn.setAutoCommit(false);
                 // insert two statements
                 stmt.executeUpdate("insert into books values ('AWS', 98, 12)");
-                // duplicate primary key, which will trigger a SQLException
+                // error: duplicate primary key, which will trigger a SQLException
                 stmt.executeUpdate("insert into books values ('AWS', 90, 15)");
                 conn.commit();
             } catch (SQLException throwables) {

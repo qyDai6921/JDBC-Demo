@@ -27,10 +27,10 @@ public class JdbcBatchProcessingPreparedStatTest {
 
             pstmt.setString(1, "Json");
             pstmt.setInt(2, 345);
-            pstmt.addBatch();
+            pstmt.addBatch(); // 默认pstmt(3,321)
 
             pstmt.setString(1, "C#");
-            pstmt.addBatch();
+            pstmt.addBatch();// 默认pstmt(2,345) pstmt(3,321)
 
             // 每次提交一批命令到数据库中运行，假设全部的命令都成功运行了，那么返回一个数组，这个数组是说明每条命令所影响的行数
             // https://www.cnblogs.com/yxwkf/p/3871789.html

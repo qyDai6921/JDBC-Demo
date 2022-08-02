@@ -29,6 +29,13 @@ public class JdbcPreparedStatementTest {
             rowsInserted = pstmt.executeUpdate();
             System.out.println(rowsInserted + " records are inserted");
 
+            // partial changes
+            pstmt.setString(1,"Java");
+            pstmt.setInt(2,111);
+            pstmt.setInt(3,50);
+            rowsInserted=pstmt.executeUpdate();
+            System.out.println(rowsInserted+" records are inserted");
+
             ResultSet rset = pstmtSelect.executeQuery();
             while (rset.next()) {
                 String title = rset.getString("title");

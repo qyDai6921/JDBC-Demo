@@ -17,7 +17,7 @@ public class JdbcMetaDataTest {
         ) {
             ResultSet rset = stmt.executeQuery("select * from books");
             ResultSetMetaData rsetMD = rset.getMetaData();
-            int numColumns = rsetMD.getColumnCount();
+            int numColumns = rsetMD.getColumnCount(); // how many columns
 
             // print column class names
             for (int i=1; i<= numColumns; i++) {

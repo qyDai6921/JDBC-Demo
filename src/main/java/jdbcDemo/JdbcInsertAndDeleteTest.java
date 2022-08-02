@@ -32,7 +32,7 @@ public class JdbcInsertAndDeleteTest {
                     "('English', 123, 4), "
                     + "('Net', 321, 5)";
             int countMultiInsert = stmt.executeUpdate(sqlMultiInsert);
-            System.out.println(countMultiInsert + " records are inserted");
+            System.out.println(countMultiInsert + " records are inserted"); // 2 records are inserted
 
 
             System.out.println("---------partial insert-----------");
@@ -52,7 +52,6 @@ public class JdbcInsertAndDeleteTest {
                 String price = resultSet.getString("price");
                 int qty = resultSet.getInt("qty");
                 System.out.println(title + ", " + price + ", " + qty);
-
             }
 
         } catch (SQLException throwables) {

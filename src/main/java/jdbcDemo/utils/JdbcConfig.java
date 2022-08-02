@@ -6,9 +6,6 @@ public class JdbcConfig {
     private static final String user = "root";
     private static final String password = "qingyang2022";
 
-//    private static final String url = "jdbc:oracle:thin:@artemis.vsnet.gmu.edu:1521/vse18c.vsnet.gmu.edu";
-//    private static final String user = "bmack4";
-//    private static final String password = "thootcho";
 
     public JdbcConfig() {
     }

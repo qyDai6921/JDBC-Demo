@@ -31,7 +31,7 @@ public class JdbcUpdateTest {
                 String title = resultSet.getString("title");
                 String price = resultSet.getString("price");
                 int qty = resultSet.getInt("qty");
-                System.out.println(title + ", " + price + ", " + qty);
+                System.out.println(title + ", " + price + ", " + qty); // Java, 222, 49
 
             }
 

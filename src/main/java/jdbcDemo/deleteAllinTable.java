@@ -20,7 +20,7 @@ public class deleteAllinTable {
             System.out.println("---------delete-----------");
             String sqlDelete = "delete from books";
             int countDelete = stmt.executeUpdate(sqlDelete);
-            System.out.println(countDelete + " records are deleted");
+            System.out.println(countDelete + " records are deleted"); // output: 3 records are deleted
 
             conn.commit();
 
