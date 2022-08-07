@@ -4,7 +4,7 @@ public class JdbcConfig {
 
     private static final String url = "jdbc:mysql://localhost:3306/jdbc-demo";
     private static final String user = "root";
-    private static final String password = "qingyang2022";
+    private static final String password = "******";
 
 
     public JdbcConfig() {
